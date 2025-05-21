@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="shortcut icon" href="https://openclassrooms.com/fav-icon.png?v=3" type="image/x-icon">
+	<script src="./scripts/fonctions.js" defer></script>
+	<script src="./scripts/index.js" defer></script>
+</head>	
+<body>
+	<div id="main-container">
+		<header>
+			<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">projets</a></li>
+					<li><a href="#">contact</a></li>
+					<li><a href="login.html" id="lienConnexion">login</a></li>
+					<li><img src="./assets/icons/instagram.png" alt="Instagram" id="instagram"></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="introduction">
+				<figure>
+					<img src="./assets/images/sophie-bluel.png" alt="Sophie Bluel">
+				</figure>
+				<article>
+					<h2>Designer d'espace</h2>
+					<div id="paragraphesIntro">
+						<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+						<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+						<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+					</div>
+				</article>
+			</section>
+
+			<section id="portfolio">
+
+				<div id="modale">
+					<div id="modaleContainer">
+						<header id="modaleHeader">
+							<div id="modaleHeaderIcones">
+								<i class="fa-solid fa-arrow-left-long" id="retourModale"></i>
+								<i class="fa-solid fa-xmark" id="fermetureModale"></i>
+							</div>
+							<h3 id="titreModale">Galerie photo</h3>
+						</header>
+						
+						<section id="galerieModale">
+							<!-- FORMULAIRE D'AJOUT -->
+								<form action="#" method="POST" id="formulaireRealisation" target="_self">
+									<!-- DIV PHOTO -->
+										<div id="divPhoto">
+											<i class="fa-regular fa-image"></i>
+											<button id="boutonDivPhoto">
+												+ Ajouter photo
+												<label for="inputDivPhoto" id="labelInputDivPhoto">Photo</label>
+												<input type="file" name="image" id="inputDivPhoto" accept="image/jpeg, image/png" maxlength="4M" required aria-required="true">
+											</button>
+											<p id="formats">jpg, png : 4mo max</p>
+											<p id="inputPhotoErreur"></p>
+										</div>
+									<!-- FIN DIV PHOTO -->
+
+									<!-- TITRE -->
+										<div id="divTitre">
+											<label for="inputTitre">Titre</label>
+											<input type="text" name="title" id="inputTitre" pattern="[a-zA-Z&\- ']+" required aria-required="true">
+											<p id="inputTitreErreur"></p>
+										</div>
+									<!-- FIN TITRE -->
+									
+									<div id="divCategorie">
+										<label for="selectCategorie">Catégorie</label>
+										<select name="category" id="selectCategorie" required aria-required="true"></select>
+										<p id="selectCategorieErreur"></p>
+									</div>
+									<button id="validerPhoto" class="desactive" type="submit" disabled="disabled" aria-disabled="true">Valider</button>
+								</form>
+							<!-- FIN FORMULAIRE D'AJOUT -->
+						</section>
+		
+						<footer id="modaleFooter">
+							<button id="ajoutPhoto">Ajouter une photo</button>
+						</footer>
+					</div>
+				</div>
+				
+				<h2>Mes projets</h2>
+				
+				<div id="galery"></div>
+
+			</section>
+			
+			<section id="contact">
+				<h2>Contact</h2>
+				<p>Vous avez un projet ? Discutons-en !</p>
+				<form action="#" method="post">
+					<label for="name">Nom</label>
+					<input type="text" name="name" id="name">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer">
+				</form>
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Mentions Légales</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>

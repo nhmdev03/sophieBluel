@@ -1,0 +1,891 @@
+/* GÉNÉRAL */
+
+	/* CHARTE GRAPHIQUE */
+    
+    :root 
+    {
+        --main-bg-color: #FFFEF8;
+		--main-orange: #B1663C;
+        --main-green: #1D6154;
+
+		/* AJOUTS */
+		--full-white: #FFFFFF;
+		--full-black: #000000;
+		--full-red: #FF0000;
+		--main-grey: #3D3D3D;
+    }
+
+/* FIN CHARTE GRAPHIQUE */
+
+	*
+	{
+		box-sizing: border-box;
+	}
+
+
+	body
+	{
+		background-color: var(--main-bg-color);
+	}
+
+/* FIN GÉNÉRAL */
+	
+	
+	/* http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video
+	{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section 
+	{
+		display: block;
+	}
+	
+	body 
+	{
+		line-height: 1;
+	}
+
+	button
+	{
+		border: 0;
+	}
+	
+	ol, ul 
+	{
+		list-style: none;
+	}
+	
+	blockquote, q 
+	{
+		quotes: none;
+	}
+	
+	blockquote:before, blockquote:after,
+	q:before, q:after 
+	{
+		content: '';
+		content: none;
+	}
+	
+	table 
+	{
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	/** end reset css**/
+
+	body 
+	{
+		max-width: 1440px;			
+		margin: auto;
+		font-family: 'Work Sans';
+		font-size: 14px;
+	}
+
+	
+	/* PARAGRAPHES ERREUR DES CHAMPS DE FORMULAIRE */
+
+		#inputEmailErreur, #inputPasswordErreur, #inputPhotoErreur, #inputTitreErreur, #selectCategorieErreur
+		{
+			display: none;
+			width: 100%;
+			font-size: 14px;
+			color: var(--full-red);
+			margin-top: 10px;
+		}
+
+	/* FIN PARAGRAPHES ERREUR DES CHAMPS DE FORMULAIRE */
+
+
+	/* BANDEAU NOIR AUTHENTIFIÉ */
+
+		#bandeauNoir
+		{
+			background-color: var(--full-black);
+			color: var(--full-white);
+			height: 59px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: 400;
+			font-size: 16px;
+		}
+
+		#iconeBandeauNoir
+		{
+			margin-right: 10px;
+		}
+
+	/* BANDEAU NOIR AUTHENTIFIÉ */
+
+
+
+	/* AJOUT MAIN CONTAINER */
+
+		#main-container
+		{
+			max-width: 1140px;
+			display: block;
+			margin: 0 auto;
+		}
+
+	/* FIN AJOUT MAIN CONTAINER */
+	
+
+	#main-container > header 
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 50px 0;
+		height: 42px;
+	}
+	
+	section 
+	{
+		margin: 50px 0;
+	}
+
+	h1
+	{
+		display: flex;
+		flex-direction: column;
+		font-family: 'Syne';
+		font-size: 22px;
+		font-weight: 800;
+		color: var(--main-orange);
+	}
+
+	h1 > span 
+	{
+		font-family: 'Work Sans';
+		font-size:10px;
+		letter-spacing: 0.1em;
+	}
+
+	h2
+	{
+		font-family: 'Syne';
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 36px;
+		color: var(--main-green);
+	}
+
+	header nav
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	header nav ul 
+	{
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		height: 22px;
+	}
+
+	header nav ul li 
+	{
+		font-size: 16px;
+		font-weight: 400;
+		margin-left: 30px;
+		height: 19px;
+		width: 60px;
+	}
+
+	header nav ul li:first-child	
+	{
+		margin-left: 0;
+	}
+
+	header nav ul li:last-child	
+	{
+		height: 22px;
+	}
+
+	header nav ul li a:hover 
+	{
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	/* RESET DU STYLE AUTO DU NAVIGATEUR */
+	a
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	#instagram 
+	{
+		width: 22px;
+		height: 22px;
+	}
+
+
+
+/* MAIN */
+
+	main
+	{
+		margin-top: 150px;
+	}
+	
+/* FIN MAIN */
+
+
+/* INTRODUCTION ET PORTFOLIO */
+
+	#introduction, #portfolio
+	{
+		max-width: 960px;
+	}
+
+/* FIN INTRODUCTION ET PORTFOLIO */
+
+
+
+/* INTRODUCTION */
+
+	#introduction
+	{
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	#introduction figure
+	{
+		flex: 1;
+		margin-right: 82px;
+	}
+
+	#introduction img
+	{
+	
+		width: 474px;
+		height: auto;
+	}
+
+	#introduction article
+	{
+		flex: 1;
+		width: 404px;
+	}
+
+	#introduction h2
+	{
+		margin-bottom: 1em;
+	}
+
+	#paragraphesIntro
+	{
+		height: 192px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#introduction p
+	{
+		margin-bottom: 0.5em;
+	}
+
+/* FIN INTRODUCTION */
+
+
+
+/* PORTFOLIO */
+
+	#portfolio
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 150px auto 50px;
+		position: relative;		/* Pour permettre la position absolute à la modale */
+	}
+
+	#portfolio h2
+	{
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+
+	/* MENU DES TRAVAUX*/
+
+		#menuTravaux
+		{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+			height: 38px;
+		}
+
+		#menuTravaux button, #ajoutPhoto, #validerPhoto
+		{
+			font-family: 'Syne';
+			font-size: 16px;
+			font-weight: 700;
+			min-width: 100px;
+			padding: 0 10px;
+			margin-left: 15px;
+			border: 1px solid var(--main-green);
+			color: var(--main-green);
+			border-radius: 60px;
+			background-color: var(--main-bg-color);
+		}
+
+		#menuTravaux button:hover, #ajoutPhoto:hover
+		{
+			opacity: 0.8 !important;
+			border: 1px solid var(--main-orange) !important;
+			background-color: var(--main-orange) !important;
+			color: var(--full-white) !important;
+			cursor: pointer;
+		}
+
+		#tous
+		{
+			margin-left: 0 !important;
+		}
+
+		.selected
+		{
+			color: var(--full-white) !important;
+			background-color: var(--main-green) !important;
+		}
+
+	/* FIN MENU DES TRAVAUX*/
+
+
+
+	/* GALERIE */
+
+		#galery
+		{
+			width: 100%;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: 20px;
+			grid-row-gap: 20px;
+			justify-items: center;
+		}
+
+		#galery figure
+		{
+			width: 304px;
+			height: 430px;
+		}
+
+		#galery img
+		{
+			width: 100%;
+			height: 407px;
+		}
+
+		#galery figcaption
+		{
+			color: var(--main-grey);
+			font-size: 13px;
+			font-weight: 400;
+			margin-top: 5px;
+		}
+
+		/* POUR LES MESSAGES D'ERREUR */
+		#galery strong
+		{
+			grid-column-start: 2;
+		}
+
+	/* FIN GALERIE */
+
+
+	/* BOUTON MODIFIER */
+
+		/*DIV*/
+		#divBoutonModifier
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 36px;
+			margin-bottom: 50px
+		}
+
+		/*BOUTON*/
+		#boutonModifier
+		{
+			width: 84px;
+			height: 18px;
+			background-color: transparent;
+			border: 0;
+			margin-left: 20px;
+			display: flex;
+			align-items: flex-end;
+		}
+
+		/*ICONE*/
+		#iconeBoutonModifier
+		{
+			margin-right: 10px;
+			width: 16px;
+			height: 16px;
+		}
+
+		/*SPAN*/
+		#spanBoutonModifier
+		{
+			width: 58px;
+		}
+
+	/* FIN BOUTON MODIFIER */
+
+
+	/* MODALE */
+
+		#modale
+		{
+			display: none;
+			width: 630px;
+			height: 688px;
+			background-color: var(--full-white);
+			border-radius: 10px;
+			position: absolute;
+			top: 0;
+			left: 165px;	/* 960px pour portfolio - 630px = 330 / 2 = 165px */
+			z-index: 1; /* Profondeur pour placer l'élement au dessus */
+		}
+
+		#modaleContainer
+		{
+			width: 100%;
+			height: 100%;
+			padding: 20px 20px 0px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#modaleHeader, #modaleFooter
+		{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#modaleHeaderIcones
+		{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		/* ICONE RETOUR */
+
+			#retourModale
+			{
+				visibility: hidden;
+			}
+
+		/* FIN ICONE RETOUR */
+
+		/* ICONE DE FERMETURE */
+			#fermetureModale
+			{
+				font-size: 14px;
+				height: 24px;
+				width: 24px;
+				line-height: 24px;
+				align-self: flex-end;
+				text-align: center;
+			}
+
+			#fermetureModal:hover
+			{
+				cursor: pointer;
+			}
+		/* FIN ICONE DE FERMETURE */
+
+		#titreModale
+		{
+			line-height: 30px;
+			font-size: 26px;
+			font-weight: 400;
+			margin-top: 20px;
+		}
+
+		#modale button
+		{
+			width: 237px;
+			height: 36px;
+			margin-left: 0;
+			color: var(--full-white);
+		}
+
+		#galerieModale
+		{
+			border-bottom: 1px solid #B3B3B3;	
+			display: flex;
+			/*justify-content: space-between;*/
+			flex-wrap: wrap;
+			max-width: 420px;
+			max-height: 420px;
+			margin-top: 50px;
+			margin-bottom: 0;
+			padding-bottom: 40px;
+			overflow: auto;
+		}
+
+		.workContainer
+		{
+			position: relative;
+			width: 76.86px;
+			height: 102.57px;
+			margin: 0 5px 20px 0;
+		}
+
+		.workContainer:hover
+		{
+			opacity: 0.8;
+		}
+
+		.workContainer img
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 76.86px;
+			height: 102.57px;
+		}
+
+		.workContainer i
+		{
+			color: var(--full-white);
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			z-index: 1;
+			background-color: #000000;
+			border-radius: 2px;
+			width: 17px;
+			height: 18px;
+			text-align: center;
+		}
+
+		.workContainer i:hover
+		{
+			color: #ff0000;
+			background-color: var(--full-white);
+		}
+
+		.workContainer i::before
+		{
+			font-size: 11px;
+			display: inline;
+			vertical-align: bottom;
+		}
+
+		#ajoutPhoto
+		{
+			margin-top: 40px;
+			background-color: var(--main-green);
+		}
+
+		/* MODALE PARTIE 2 / AJOUT PHOTO */
+
+			#modaleHeader
+			{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			#retourModale
+			{
+				font-size: 19px;
+				height: 21px;
+			}
+
+			#formulaireRealisation
+			{
+				display: none;
+				flex-direction: column;
+				align-items : center;
+			}
+
+			#divPhoto
+			{
+				width: 420px;
+				height: 169px;
+				background-color: #E8F1F6;
+				padding: 15px 0;
+				border-radius: 3px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			#divPhoto i 
+			{
+				font-size: 76px;
+				color: #B9C5CC;
+			}
+
+			#boutonDivPhoto
+			{
+				position: relative;
+				width: 173px !important;
+				line-height: 36px;
+				height: 36px;
+				border-radius: 50px;
+				color: #306685 !important;
+				background-color: #CBD6DC !important;
+				font-family: "Work sans";
+				font-size: 14px !important;
+				font-weight: 500 !important;
+				margin: 10px 0 5px 0;
+				z-index: 0;
+			}
+
+			#labelInputDivPhoto
+			{
+				display: none;
+			}
+
+			#boutonDivPhoto:hover
+			{
+				opacity: 0.8;
+			}
+
+			#boutonDivPhoto input
+			{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				opacity: 0;
+			}
+
+			#formats
+			{
+				color: #444444;
+				width: 94px;
+				height: 12px;
+				font-size: 10px;
+				font-weight: 400;
+			}
+
+			#inputPhotoErreur
+			{
+				margin-top: 18px;
+			}
+
+			#divImage
+			{
+				width: 129px;
+                height: 169px;
+			}
+			
+			#imageAjoutee
+			{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			#divTitre, #divCategorie
+			{
+				display: flex;
+				flex-direction: column;
+			}
+
+			#divTitre
+			{
+				margin: 40px 0 15px;
+			}
+
+			#formulaireRealisation label
+			{
+				font-size: 14px;
+			}
+
+			#inputTitre, #selectCategorie
+			{
+				border: 0;
+				box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+				width: 420px;
+				height: 51px;
+				color: #444444;
+				font-size: 14px;
+				font-weight: 400;
+				padding-left: 15px;
+			}
+
+			#inputTitre:focus, #selectCategorie:focus
+			{
+				outline: 0;
+			}
+
+			#selectCategorie
+			{
+				background-color: var(--full-white);
+				padding-right: 15px;
+				border-right: 15px solid transparent
+			}
+
+			#selectCategorie option
+			{
+				color: #444444;
+				font-size: 14px;
+				font-weight: 400;
+			}
+
+			#divTitre label, #divCategorie label
+			{
+				font-weight: 500;
+				margin-bottom: 5px;
+			}
+
+			#divCategorie
+			{
+				padding-bottom: 50px;
+				border-bottom: 1px solid #B3B3B3;
+			}
+
+			#validerPhoto
+			{
+				margin-top: 40px;
+			}
+
+			.active
+			{
+				background-color: var(--main-green) !important;
+				border: 1px solid var(--main-green) !important;
+			}
+
+			.desactive
+			{
+				background-color: #A7A7A7 !important;
+  				border: 1px solid #A7A7A7 !important;
+			}
+
+		/* FIN MODALE PARTIE 2 / AJOUT PHOTO */
+
+
+	/* FIN MODALE */
+
+/* FIN PORTFOLIO */
+
+
+
+/* CONTACT */
+
+	#contact 
+	{
+		width: 50%;
+		margin: auto;
+	}
+
+	#contact > *
+	{
+		text-align: center;
+
+	}
+
+	#contact h2
+	{
+		margin-bottom: 20px;
+	}
+
+	#contact form
+	{
+		text-align: left;
+		margin-top:30px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contact input
+	{
+		height: 50px;
+		font-size: 1.2em;
+		border: none;
+		box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	}
+
+	#contact input:focus, #contact textarea:focus
+	{
+		outline: none;
+	}
+
+	#contact label
+	{
+		margin: 2em 0 1em 0;
+	}
+
+	#contact textarea
+	{
+		border: none;
+		box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	}
+
+	input[type="submit"]
+	{
+		font-family: 'Syne';
+		font-weight: 700;
+		color: white;
+		background-color: var(--main-green);
+		margin : 2em auto ;
+		width: 180px;
+		text-align: center;
+		border-radius: 60px ;
+	}
+
+/* FIN CONTACT */
+
+
+/* FOOTER */
+
+	footer nav ul
+	{
+		display: flex;
+		justify-content: flex-end;
+		margin: 2em;
+		width: 100%;
+	}
+
+/* FIN FOOTER */
